@@ -1,9 +1,10 @@
+package  ru.netology
 fun main() {
-    countComission("Maestro", 700000, 60000)
+    countComission("VK Pay", 10000, 10000)
 }
 
 
-fun countComission(card: String = "VK Pay", lastSum: Int = 0, transfer: Int): Int {
+fun countComission(card: String = "VK Pay", lastSum: Int = 0, transfer: Int = 0): Int {
     var comission = 0
 
     if((card == "Mastercard" || card == "Maestro") && lastSum + transfer < 75000) comission = 0
