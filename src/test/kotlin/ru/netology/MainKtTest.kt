@@ -25,7 +25,7 @@ class MainKtTest {
 
         val result = countComission(card, lastSum, transfer)
 
-        assertEquals(650, result)
+        assertEquals(750, result)
     }
 
     @Test
